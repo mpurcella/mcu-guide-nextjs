@@ -10,7 +10,7 @@ function HamburgerButton({ isNavOpen, onClick }: HamburgerButtonProps) {
 	return (
 		<button
 			type='button'
-			className='flex h-24 w-28 flex-col justify-around lg:hidden'
+			className='flex h-24 w-28 flex-col justify-around focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-red lg:hidden'
 			onClick={onClick}
 		>
 			<span

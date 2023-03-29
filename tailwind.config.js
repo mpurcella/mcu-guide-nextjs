@@ -92,7 +92,7 @@ module.exports = {
 			});
 			addUtilities({
 				'.navlink-transition': {
-					transition: 'border .2s linear, outline .1s linear'
+					transition: 'border .2s linear'
 				},
 				'.nav-list-transition': {
 					transition: 'opacity .2s linear, right .2s linear'

@@ -69,7 +69,7 @@ export const Header = () => {
 			<nav className='flex items-center justify-between'>
 				<Link
 					href='/'
-					className='navlink-transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-red'
+					className='focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-red'
 				>
 					<img
 						src='/images/marvel-logo.png'
