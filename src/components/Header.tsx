@@ -67,11 +67,14 @@ export const Header = () => {
 	return (
 		<header className='relative z-40 bg-black-300 px-20 py-12 md:px-40'>
 			<nav className='flex items-center justify-between'>
-				<Link href='/'>
+				<Link
+					href='/'
+					className='navlink-transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-red'
+				>
 					<img
 						src='/images/marvel-logo.png'
 						alt='Marvel Logo'
-						className='h-[40px] w-[100px] md:w-[120px]'
+						className='h-40 w-100 md:w-120'
 						onClick={closeNav}
 					/>
 				</Link>

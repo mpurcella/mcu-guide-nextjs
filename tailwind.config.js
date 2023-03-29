@@ -57,6 +57,8 @@ module.exports = {
 			32: '2rem',
 			40: '2.5rem',
 			64: '4rem',
+			100: '6.25rem',
+			120: '7.5rem',
 			full: '100%',
 			screen: '100vh'
 		}
@@ -66,7 +68,7 @@ module.exports = {
 			const buttonLinkBase =
 				'uppercase px-32 py-16 border border-black-300 inline-flex gap-12 transition-colors text-14 duration-200 ease-linear font-medium';
 			const navLinkBase =
-				'font-roboto-flex tracking-tight text-20 uppercase lg:text-14 border-y-2 border-transparent hover:border-b-red navlink-transition lg:font-medium';
+				'font-roboto-flex tracking-tight text-20 uppercase lg:text-14 border-y-2 border-transparent hover:border-b-red navlink-transition lg:font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-red';
 
 			addComponents({
 				'.button-link': {
@@ -90,7 +92,7 @@ module.exports = {
 			});
 			addUtilities({
 				'.navlink-transition': {
-					transition: 'border .2s linear'
+					transition: 'border .2s linear, outline .1s linear'
 				},
 				'.nav-list-transition': {
 					transition: 'opacity .2s linear, right .2s linear'
