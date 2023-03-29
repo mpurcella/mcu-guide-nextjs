@@ -2,7 +2,7 @@ import React from 'react';
 import { Wrapper } from './Wrapper';
 import { ButtonLink } from './ButtonLink';
 import { FaExternalLinkAlt, FaPlay } from 'react-icons/fa';
-import { RelatedMoviesList } from './RelatedMoviesList';
+import { MediaCardList } from './MediaCardList';
 
 type MovieInfoProps = {
 	movie: {
@@ -122,7 +122,10 @@ export const MovieInfo = ({ movie }: MovieInfoProps) => {
 							<h3 className='font-roboto-flex text-20 font-semibold uppercase tracking-tight'>
 								Related Movies
 							</h3>
-							<RelatedMoviesList relatedMovies={movie.related_movies} />
+							<MediaCardList
+								data={movie.related_movies}
+								basePath='/movies'
+							/>
 						</div>
 					</Wrapper>
 				</section>

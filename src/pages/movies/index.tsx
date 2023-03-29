@@ -4,14 +4,12 @@ import { Wrapper } from '../../components/Wrapper';
 import { MediaCardList } from '../../components/MediaCardList';
 
 type MoviesProps = {
-	data: {
-		data: Array<{
-			id: number;
-			title: string;
-			release_date: string;
-			cover_url: string;
-		}>;
-	};
+	data: Array<{
+		id: number;
+		title: string;
+		release_date: string;
+		cover_url: string;
+	}>;
 };
 
 const endpoint = 'https://mcuapi.herokuapp.com/api/v1/movies';
@@ -21,7 +19,7 @@ export async function getServerSideProps() {
 	const data = await res.json();
 
 	return {
-		props: { data }
+		props: { data: data.data }
 	};
 }
 
